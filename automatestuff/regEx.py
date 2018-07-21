@@ -27,3 +27,17 @@ mobat = batRegex.search('Batmobile lost a wheel')
 print(mobat.group())
 print(mobat.group(1))
 
+batRgex =  re.compile('Bat(wo)?man')
+mo1 = batRgex.search("The Advantures of Batman")
+print(mo1.group())
+
+mo2 = batRgex.search("The Advantures of Batwoman")
+print(mo2.group())
+
+phoneRegex = re.compile('(\d\d\d-)?\d\d\d-\d\d\d\d')
+mo1 = phoneRegex.search('My number is 455-555-5555')
+print(mo1.group())
+
+mo2 = phoneRegex.search('My number is 555-4242')
+print(mo2.group())
+
