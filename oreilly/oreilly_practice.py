@@ -9,3 +9,25 @@ def sumall(*args):
 
 sumall(23,25,25)
 
+s = 'abc'
+t = [0,1,2]
+zip(s,t)
+for pair in zip(s,t):
+    print(pair)
+
+print(list(zip(s,t)))
+
+def has_match(t1, t2):
+    for x, y in zip(t1,t2):
+        if x == y:
+            return True
+    return False
+
+print(has_match('8sd123', '8sf126'))
+
+d = {'a':0, 'b':1, 'c':2}
+t = d.items()
+print(t)
+
+for key, value in d.items():
+    print(key, value)
