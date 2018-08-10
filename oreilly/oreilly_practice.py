@@ -33,10 +33,11 @@ for key, value in d.items():
     print(key, value)
 
 
-def linecount(filename):
-    count = 0
-    for line in open(filename):
-        count += 1
-    return count
 
-print(linecount(filename))
+# def line_count(filename):
+#     count = 0
+#     for line in open(filename):
+#         count += 1
+#     return count
+#
+# print(linecount('emma.txt'))
